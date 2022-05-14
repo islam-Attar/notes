@@ -1,4 +1,5 @@
 import './Header.scss';
+import {Link} from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -6,9 +7,9 @@ const Header = () => {
         <header>
             <div className='headerName'>RESTy</div>
             <div class="topnav">
-                <a href="#home">Home</a>
-                <a href="#news">History</a>
-                <a href="#contact">Help</a>
+                <a href = "#b"><Link to="/">Home</Link></a>
+                <a href = "#b"><Link to="/History">History</Link></a>
+                
                 
             </div>
         </header>
