@@ -35,7 +35,7 @@ function Home(props) {
     }, [isloading]);
     return (
         <div className="home">
-            <Form handelApi={handelApi} handleClick={handleClick} />
+            <Form handelApi={handelApi} handleClick={handleClick} addHistory={props.addHistory}/>
             <Results data={data} method={request.method} url={request.url} header={header} loading={isloading} />
         </div>
     )

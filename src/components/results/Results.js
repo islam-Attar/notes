@@ -7,12 +7,14 @@ function Result(props) {
         return (
             <div className="result">
                 <div className="api">
-                    <p><strong>{`${props.method} `}</strong></p>
+                    <p><strong>{props.method}</strong></p>
                     <p>{props.url}</p>
                 </div>
                 <div className="body">
+                    <div>
                     <JSONPretty data={props.header} />
                     <JSONPretty data={props.data} /> 
+                    </div>
                 </div>
             </div>
         )
