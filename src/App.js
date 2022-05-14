@@ -1,23 +1,23 @@
-import './App.css';
-import Form from './components/form/form';
+import './App.scss';
+import { Routes, Route } from "react-router-dom";
+import Home from './components/home/Home';
+import History from './components/history/History';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import Result from './components/results/Results';
-import {useState} from 'react';
+
 
 function App() {
-  const [form, setForm] = useState({});
-  const getForm = (form) => {
-    setForm(form);
-  }
-
+  
   return (
     <div className="App">
-      <Header/>
-      <Form getForm = {getForm}/>
-      <Result method = {form.method} url = {form.url}/>
-      <Footer/>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="History" element={<History />} />
+      </Routes>
+      <Footer />
     </div>
+
   );
 }
 
