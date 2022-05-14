@@ -7,8 +7,8 @@ const Header = () => {
         <header>
             <div className='headerName'>RESTy</div>
             <div class="topnav">
-                <a><Link to="/">Home</Link></a>
-                <a><Link to="/History">History</Link></a>
+                <a href = "#b"><Link to="/">Home</Link></a>
+                <a href = "#b"><Link to="/History">History</Link></a>
                 
                 
             </div>
