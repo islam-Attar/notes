@@ -1,5 +1,4 @@
-'use strict';
-import './Header.css';
+import './Header.scss';
 
 const Header = () => {
     return (
